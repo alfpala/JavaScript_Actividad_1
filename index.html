@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1 - Mi Tienda: Online</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-card">
+            <img src="./assets/images/imagen1.jpg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p class="price">$20.00</p>
+            <div class="quantity-controls">
+                <button class="decrease" onclick="updateQuantity('product1', -1)">-</button>
+                <span id="product1-quantity">1</span>
+                <button class="increase" onclick="updateQuantity('product1', 1)">+</button>
+            </div>
+            <p>Total: $<span id="product1-total">20.00</span></p>
+        </div>
+
+      
+        <div class="total">
+            <h3>Total a pagar: $<span id="total-amount">20.00</span></h3>
+        </div>
+    </div>
+
+    <script src="./assets/javascripts/app.js"></script>
+</body>
+</html>
